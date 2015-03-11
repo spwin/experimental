@@ -1,3 +1,8 @@
+test_test:
+    resource: "@TestTestBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 app:
     resource: @AppBundle/Controller/
     type:     annotation
