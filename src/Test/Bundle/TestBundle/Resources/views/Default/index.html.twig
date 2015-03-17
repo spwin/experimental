@@ -1,4 +1,14 @@
 {% extends 'TestTestBundle::defaultLayout.html.twig' %}
 {% block body %}
-	Hello {{ name|upper }}!
+	<div class="chat_wrapper">
+        <div class="chat_content">
+            <div class="messages_content"></div>
+            <div class="input_content">
+                <form action="" method="post" {{ form_enctype(form) }} class="message_form">
+                    {{ form_widget(form.message) }}
+                    {{ form_widget(form.save) }}
+                </form>
+            </div>
+        </div>
+    </div>
 {% endblock %}
